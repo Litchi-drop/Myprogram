@@ -11,21 +11,21 @@ namespace Myprogram
     {
         static void Main(string[] args)
         {
-            /*
+            
             #region
             Del handler = new Del(DelMethod);
             MethodWrit(1,2,handler);
-            //Console.WriteLine("请输入一个邮箱");
-            //string email = Console.ReadLine();
-            //Regex regex = new Regex(@"\b(\w)+(\.\w)*@(\w)+((\.\w+)+)\b");
-            //if (regex.IsMatch(email))
-            //{
-            //    Console.WriteLine("邮箱格式正确。");
-            //}
-            //else
-            //{
-            //    Console.WriteLine("邮箱格式不正确。");
-            //}
+            Console.WriteLine("请输入一个邮箱");
+            string email = Console.ReadLine();
+            Regex regex = new Regex(@"\b(\w)+(\.\w)*@(\w)+((\.\w+)+)\b");
+            if (regex.IsMatch(email))
+            {
+                Console.WriteLine("邮箱格式正确。");
+            }
+            else
+            {
+                Console.WriteLine("邮箱格式不正确。");
+            }
 
 
             Regex regex1 = new Regex(@"^\w{6,18}$");//验证用户密码 长度在6-18之间，只能包含英文和数字
@@ -57,7 +57,7 @@ namespace Myprogram
 
             Console.WriteLine("{0}",x);
             #endregion
-            */
+            
             Console.WriteLine("请输入一个数字！");
             int num = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("{0}的阶乘为：{1}",num, JC(num));
