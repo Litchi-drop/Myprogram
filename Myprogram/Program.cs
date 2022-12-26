@@ -16,16 +16,16 @@ namespace Myprogram
             Del handler = new Del(DelMethod);
             MethodWrit(1,2,handler);
             Console.WriteLine("请输入一个邮箱");
-            string email = Console.ReadLine();
-            Regex regex = new Regex(@"\b(\w)+(\.\w)*@(\w)+((\.\w+)+)\b");
-            if (regex.IsMatch(email))
-            {
-                Console.WriteLine("邮箱格式正确。");
-            }
-            else
-            {
-                Console.WriteLine("邮箱格式不正确。");
-            }
+            //string email = Console.ReadLine();
+            //Regex regex = new Regex(@"\b(\w)+(\.\w)*@(\w)+((\.\w+)+)\b");
+            //if (regex.IsMatch(email))
+            //{
+            //    Console.WriteLine("邮箱格式正确。");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("邮箱格式不正确。");
+            //}
 
 
             Regex regex1 = new Regex(@"^\w{6,18}$");//验证用户密码 长度在6-18之间，只能包含英文和数字
