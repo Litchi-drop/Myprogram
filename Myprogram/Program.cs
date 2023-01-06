@@ -11,6 +11,7 @@ namespace Myprogram
     {
         static void Main(string[] args)
         {
+            string str = "2023-01-06 13点提交新内容";
 
             dynamic dyn = 1.1;
             dyn += "1";
