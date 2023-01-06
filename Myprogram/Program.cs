@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +12,7 @@ namespace Myprogram
         static void Main(string[] args)
         {
             string str = "2023-01-06 13点提交新内容";
-
+string str1 = "这是在Gitee上编辑的内容";
             dynamic dyn = 1.1;
             dyn += "1";
             int i = 1;
