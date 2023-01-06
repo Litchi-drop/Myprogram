@@ -11,7 +11,12 @@ namespace Myprogram
     {
         static void Main(string[] args)
         {
-            
+
+            dynamic dyn = 1.1;
+            dyn += "1";
+            int i = 1;
+            Console.WriteLine("dyn={0},dyn的类型{1}",dyn, dyn.GetType());
+
             #region
             Del handler = new Del(DelMethod);
             MethodWrit(1,2,handler);
