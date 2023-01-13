@@ -18,6 +18,13 @@ string str1 = "这是在Gitee上编辑的内容";
             int i = 1;
             Console.WriteLine("dyn={0},dyn的类型{1}",dyn, dyn.GetType());
 
+            int key;
+            for(key = 0;key < 10 ;k++)
+            {
+                //这是从GitLab上面提交的内容
+                Console.WriteLine("key的值为{0}",key);
+            }
+
             #region
             Del handler = new Del(DelMethod);
             MethodWrit(1,2,handler);
