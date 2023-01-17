@@ -11,6 +11,15 @@ namespace Myprogram
     {
         static void Main(string[] args)
         {
+            Phone_Number p1 = new Phone_Number();
+            List<string> result = new List<string>();
+            result = p1.LetterCombinations("23");
+            foreach (string item in result)
+            {
+                Console.WriteLine(item);
+            }
+            
+            /*
             string str = "2023-01-06 13点提交新内容";
 string str1 = "这是在Gitee上编辑的内容";
             dynamic dyn = 1.1;
@@ -74,6 +83,7 @@ string str1 = "这是在Gitee上编辑的内容";
             Console.WriteLine("请输入一个数字！");
             int num = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("{0}的阶乘为：{1}",num, JC(num));
+            */
 
             Console.ReadLine();
         }
@@ -151,5 +161,29 @@ string str1 = "这是在Gitee上编辑的内容";
     
     }
 
+    /// <summary>
+    /// Leet No.13
+    /// </summary>
+    public class Phone_Number 
+    {
+        public List<string> LetterCombinations(string digits) 
+        {
+            //要返回的结果列表
+            List<string> ResultList = new List<string>();
 
+            string[] str1 = { "j","k","l"};
+            string[] str2 = { "d","e","f"};
+
+            for (int i = 0; i < str1.Length; i++)
+            {
+                for (int j = 0; j < str2.Length; j++)
+                {
+                    ResultList.Add(str1[i] + str2[j]);
+                }
+            }
+
+            return ResultList;
+        }
+    
+    }
 }
