@@ -1,9 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Myprogram.LeetCode;
 
 namespace Myprogram
 {
@@ -11,14 +14,43 @@ namespace Myprogram
     {
         static void Main(string[] args)
         {
-            Phone_Number p1 = new Phone_Number();
-            List<string> result = new List<string>();
-            result = p1.LetterCombinations("23");
-            foreach (string item in result)
+            ListNode List1 = new ListNode(1);
+            ListNode List1Node2 = new ListNode(2);
+            List1.next = List1Node2;
+
+            ListNode List2 = new ListNode(1);
+            ListNode List2Node2 = new ListNode(4);
+            List2.next = List2Node2;
+
+            No21 Project = new No21();
+
+            ListNode a = Project.MergeTwoLists(List1,List2);
+
+            List<int> list = new List<int>();
+            for (int j = 0; j < 10; j++)
             {
-                Console.WriteLine(item);
+                list.Add(j);
+                Console.WriteLine(j);
             }
-            
+
+
+            //string sqlconn = @"Data Source = localhost; Initial Catalog = PerformanceAppraisalDb;User ID = YYC ;Password = 123456 ";
+            //SqlConnection connection = new SqlConnection();
+            //connection.ConnectionString = sqlconn;
+            //try
+            //{
+            //    connection.Open();
+            //    Console.WriteLine("数据库连接成功！");
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine("数据库连接失败！"+ex.Message.ToString());
+            //}
+
+            //var a = 1.5;
+            //int b = Convert.ToInt32(a);
+            //Console.WriteLine("a的值为{0},b的值为{1}",a,b);
+
             /*
             string str = "2023-01-06 13点提交新内容";
 string str1 = "这是在Gitee上编辑的内容";
@@ -186,4 +218,6 @@ string str1 = "这是在Gitee上编辑的内容";
         }
     
     }
+
+   
 }
