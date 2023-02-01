@@ -1,0 +1,7 @@
+D:\C#代码\Myprogram\Myprogram\bin\Debug\Myprogram.exe.config
+D:\C#代码\Myprogram\Myprogram\bin\Debug\Myprogram.exe
+D:\C#代码\Myprogram\Myprogram\bin\Debug\Myprogram.pdb
+D:\C#代码\Myprogram\Myprogram\obj\Debug\Myprogram.csprojAssemblyReference.cache
+D:\C#代码\Myprogram\Myprogram\obj\Debug\Myprogram.csproj.CoreCompileInputs.cache
+D:\C#代码\Myprogram\Myprogram\obj\Debug\Myprogram.exe
+D:\C#代码\Myprogram\Myprogram\obj\Debug\Myprogram.pdb
