@@ -11,7 +11,7 @@ namespace Myprogram.LeetCode
         public int StrStr(string haystack, string needle) 
         {
             int i = 0;
-
+            int j = 0;
 
             return i;
         }
