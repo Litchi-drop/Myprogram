@@ -17,11 +17,34 @@ namespace Lambda
             list1.Add(new People { name = "小炎", age = 28 });
 
 
-            IEnumerable<string> a = list1.Select(o => o.name);
-            foreach (string item in a)
+
+
+            IEnumerable<People> A1 = list1.Where(o => o.age < 30);
+            List<People> list2 = A1.ToList();
+
+
+
+
+            //计算平均值
+            string s = "53,33,55,888,9";
+            string[] strs = s.Split(',');
+            IEnumerable<int> nums = strs.Select(o => Convert.ToInt32(o));
+            double avg = nums.Average();
+            Console.WriteLine(avg);
+
+            //统计一个字符串中每个字母出现的频率（忽略大小写，然后按照从高到低的顺序输出频率高于2次的单词和其出现的频率）
+            string s1 = "Hello World hahahahahhahah";
+            //IsLetter判断是否是字母
+            var itemss = s1.Where(o => char.IsLetter(o)).Select(e => char.ToLower(e))
+                .GroupBy(c => c).Select(g => new { g.Key ,Count = g.Count()});
+            foreach (var item in itemss)
             {
                 Console.WriteLine(item);
             }
+            var itemsss = s1.Where(o => char.IsLetter(o)).Select(e => char.ToLower(e))
+                .GroupBy(c => c).Select(g => new { g.Key, Count = g.Count() }).OrderByDescending(p => p.Count).Where(i => i.Count >2);
+
+
             Console.ReadLine();
             //Action f1 = delegate () {
             //    Console.WriteLine("test");
