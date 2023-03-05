@@ -1,0 +1,6 @@
+D:\C#代码\Myprogram\HTTP_Request\bin\Debug\HTTP_Request.dll
+D:\C#代码\Myprogram\HTTP_Request\bin\Debug\HTTP_Request.pdb
+D:\C#代码\Myprogram\HTTP_Request\obj\Debug\HTTP_Request.csproj.AssemblyReference.cache
+D:\C#代码\Myprogram\HTTP_Request\obj\Debug\HTTP_Request.csproj.CoreCompileInputs.cache
+D:\C#代码\Myprogram\HTTP_Request\obj\Debug\HTTP_Request.dll
+D:\C#代码\Myprogram\HTTP_Request\obj\Debug\HTTP_Request.pdb
