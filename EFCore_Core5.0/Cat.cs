@@ -18,5 +18,8 @@ namespace EFCore_Core5._0
         [Required]
         [MaxLength(22)]
         public string Name { get; set; }//标题
+
+
+        public int age { get; set; }
     }
 }
