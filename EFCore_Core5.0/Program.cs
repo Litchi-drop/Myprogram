@@ -10,15 +10,16 @@ namespace EFCore_Core5._0
         {
             using (MyDbContext ctx = new MyDbContext())
             {
-                //Book b1 = new Book();
-                //b1.Title = "平凡的世界";
-                //b1.PubTime = DateTime.Now.AddDays(-5);
-                //b1.Price = 50;
-                //b1.AuthorName = "YYC";
-                //ctx.Books.Add(b1);
+                //Cat obj = new Cat();
+                //obj.Name = "拾玖";
+                //obj.age = 1;
+                //ctx.Cats.Add(obj);
                 //await ctx.SaveChangesAsync();
 
-                var a = ctx.Books.Single(o => o.AuthorName == "YYC");
+
+                var infos = ctx.Cats.FirstOrDefault(o => o.Name == "拾玖");
+                ctx.Cats.Remove(infos);
+                await ctx.SaveChangesAsync();
 
 
             }

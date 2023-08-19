@@ -15,6 +15,8 @@ namespace EFCore_Core5._0
 
         public DbSet<Cat> Cats { get; set; }
 
+        //public DbSet<Student> Students { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
